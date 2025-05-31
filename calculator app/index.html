@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+
+    <!--css link-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+<div class="container">
+    <div class="calculator">
+        <form >
+            <div class="display-box">
+                <input class="display" id="display" disabled>
+            </div>
+
+            <div class="btn">
+                <input type="button" value="AC" class="ac" onclick="clearAllDisplay()">
+                <input type="button" value="%" onclick="valueDispaly('%')">
+                <input type="button" value="/" onclick="valueDispaly('/')">
+                <input type="button" value="DEL" class="del" onclick="deleteDisplay()">
+            </div>
+
+            <div class="btn">
+                <input type="button" value="7" onclick="valueDispaly('7')">
+                <input type="button" value="8" onclick="valueDispaly('8')">
+                <input type="button" value="9" onclick="valueDispaly('9')">
+                <input type="button" value="*" onclick="valueDispaly('*')">
+            </div>
+
+            <div class="btn">
+                <input type="button" value="4" onclick="valueDispaly('4')">
+                <input type="button" value="5" onclick="valueDispaly('5')">
+                <input type="button" value="6" onclick="valueDispaly('6')">
+                <input type="button" value="-" onclick="valueDispaly('-')">
+            </div>
+
+            <div class="btn">
+                <input type="button" value="1" onclick="valueDispaly('1')">
+                <input type="button" value="2" onclick="valueDispaly('2')">
+                <input type="button" value="3" onclick="valueDispaly('3')">
+                <input type="button" value="+" onclick="valueDispaly('+')">
+            </div>
+
+            <div class="btn">
+                <input type="button" value="00" class="zero" onclick="valueDispaly('00')">
+                <input type="button" value="0" onclick="valueDispaly('0')">
+                <input type="button" value="." onclick="valueDispaly('.')">
+                <input type="button" value="=" class="equal" onclick= "calculate()">
+            </div>
+
+
+            
+        </form>
+    </div>
+</div>
+
+    
+
+
+    <script src="main.js"></script>
+</body>
+</html>
